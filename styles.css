@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:900|Merriweather:400,700&display=swap');
+
+:root {
+  --red: #9a0007;
+  --black: #212121;
+  --gold: #fbd233;
+}
+
+body {
+  font-family: 'Merriweather', 'Helvetica', sans-serif;
+  color: var(--black);
+  background-color: var(--gold);
+}
+
+main {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+header {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 20px auto;
+}
+
+button {
+  width: 15%;
+  max-width: 200px;
+  margin: 20px auto;
+}
+
+#wrapper {
+  float: left;
+  position: relative;
+  left: 53%;
+}
+
+#result {
+  float: left;
+  position: relative;
+  left: -50%;
+  text-align: left;
+  font-family: 'Gothic A1';
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 140px;
+}

@@ -32,11 +32,11 @@ const categories = [
   'audio',
   'paper',
   'video',
-  'light',
+  'distance',
   'tech',
   'smart',
   'water',
-  'distance',
+  'light',
   'art',
   'physical',
   'digital',
@@ -111,8 +111,9 @@ months.forEach((month, i) => {
 form.onsubmit = event => {
   event.preventDefault();
   const adjective = adjectives[firstNameSelect.value];
-  const category = categories[lastNameSelect.value];
-  const noun = nouns[monthSelect.value];
+  const category = categories[monthSelect.value];
+  const noun = nouns[lastNameSelect.value];
   console.log({adjective, category, noun});
-  resultNode.innerHTML = [adjective, category, noun].join(' ');
+  resultNode.innerHTML = [adjective, category, noun].join('<br>');
+  resultNode.scrollIntoView({behavior: 'smooth'});
 }
