@@ -39,18 +39,17 @@ button {
 }
 
 #wrapper {
-  float: left;
-  position: relative;
-  left: 53%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #result {
-  float: left;
   position: relative;
-  left: -50%;
+  left: 30px;
   text-align: left;
   font-family: 'Gothic A1';
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 140px;
+  font-size: 17vw;
 }
